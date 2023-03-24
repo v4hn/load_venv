@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>load_venv</name>
+  <version>0.0.0</version>
+  <description>load custom venvs with this workspace</description>
+
+  <maintainer email="me@v4hn.de">v4hn</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
