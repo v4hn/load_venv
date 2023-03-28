@@ -8,5 +8,7 @@
 
   <license>MIT</license>
 
+  <depend>pluginlib</depend>
+
   <buildtool_depend>catkin</buildtool_depend>
 </package>
