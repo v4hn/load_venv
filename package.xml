@@ -8,6 +8,8 @@
 
   <license>MIT</license>
 
+  <depend>virtualenv</depend>
+
   <depend>pluginlib</depend>
 
   <buildtool_depend>catkin</buildtool_depend>
