@@ -13,7 +13,7 @@ if [ ! -d "$VENV" ]; then
   (
   # basic requirements for a ROS workspace
   cat <<EOF
-empy
+empy==3.3.4
 rospkg
 EOF
   # extract all required packages from dependencies
