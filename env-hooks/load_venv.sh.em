@@ -17,7 +17,10 @@ empy
 rospkg
 EOF
   # extract all required packages from dependencies
-  rospack plugins --attrib=requirements load_venv | cut -d' ' -f2- | xargs cat
+  # extra echo to handle files without trailing newline
+  rospack plugins --attrib=requirements load_venv |
+    cut -d' ' -f2- |
+    xargs -I% sh -c "cat %; echo"
   ) | sort -u > "$ALL_REQUIREMENTS"
   if ! pip install -U -r "$ALL_REQUIREMENTS" >"$LOG" 2>&1; then
     cat "$LOG" >&2
